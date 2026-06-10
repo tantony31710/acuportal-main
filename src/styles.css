@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { border-color: oklch(0.3 0.03 200); }
+  body {
+    background-color: oklch(0.16 0.025 200);
+    color: oklch(0.97 0.01 180);
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+    background-image:
+      radial-gradient(circle at 15% 10%, oklch(0.74 0.14 175 / 0.08), transparent 45%),
+      radial-gradient(circle at 85% 90%, oklch(0.78 0.18 75 / 0.06), transparent 45%);
+    min-height: 100vh;
+  }
+  .font-mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .font-arabic { font-family: 'Noto Naskh Arabic', 'Amiri', serif; }
+  .pin-digit {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+    font-variant-numeric: tabular-nums;
+  }
+}
